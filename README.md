@@ -13,29 +13,29 @@ This repository contains Java lab work focused on matrix operations, such as mat
 
 ### 1. Clone the repository using the following command:
 
-    ```bash
+    ```
     git clone https://github.com/LiliaKozub/Java_labs.git
     cd Java_labs
     ```
 
 ### 2. Compile the Java files with this command:
 
-    ```bash
+    ```
     javac -d out/ src/lab_1/Main.java src/lab_1/MatrixOperations.java
     ```
 
 ### 3. Run the main application:
 
-    ```bash
+    ```
     java -cp out lab_1.Main
     ```
 
 ### 4. To run the unit tests, make sure you are in the `Java_labs` directory, then execute the following command:
 
-    ```bash
+    ```
     java -cp out:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore tests.MatrixOperationsTest
     ```
-    ```bash
+    ```
     java -cp out:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore tests.MainTest
     ```
 
