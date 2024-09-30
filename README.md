@@ -13,10 +13,10 @@ This repository contains Java lab work focused on matrix operations, such as mat
 
 ### 1. Clone the repository using the following command:
 
-    ```
+    
     git clone https://github.com/LiliaKozub/Java_labs.git
     cd Java_labs
-    ```
+    
 
 ### 2. Compile the Java files with this command:
 
