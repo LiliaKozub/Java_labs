@@ -20,24 +20,24 @@ This repository contains Java lab work focused on matrix operations, such as mat
 
 ### 2. Compile the Java files with this command:
 
-    ```
+    
     javac -d out/ src/lab_1/Main.java src/lab_1/MatrixOperations.java
-    ```
+    
 
 ### 3. Run the main application:
 
-    ```
+    
     java -cp out lab_1.Main
-    ```
+    
 
 ### 4. To run the unit tests, make sure you are in the `Java_labs` directory, then execute the following command:
 
-    ```
+    
     java -cp out:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore tests.MatrixOperationsTest
-    ```
-    ```
+    
+    
     java -cp out:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore tests.MainTest
-    ```
+    
 
 ## Conclusion
 
