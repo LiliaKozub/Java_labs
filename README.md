@@ -1,6 +1,6 @@
 # Java_labs
 
-## Description (Lab1)
+## Description (Lab1, variant 9)
 
 This repository contains Java lab work focused on matrix operations, such as matrix multiplication and calculating column averages. The project includes unit tests written using JUnit 4 to verify the correctness of the implemented operations.
 
