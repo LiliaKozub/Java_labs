@@ -11,41 +11,35 @@ This repository contains Java lab work focused on matrix operations, such as mat
 
 ## How to Run the Project
 
-### 1. Clone the Repository
+### 1. Clone the repository using the following command:
 
-To get started, clone the repository using the following command:
+    ```bash
+    git clone https://github.com/LiliaKozub/Java_labs.git
+    cd Java_labs
+    ```
 
-```bash
-git clone https://github.com/LiliaKozub/Java_labs.git
-cd Java_labs
-```
+### 2. Compile the Java files with this command:
 
-### 2. Compile the Project
+    ```bash
+    javac -d out/ src/lab_1/Main.java src/lab_1/MatrixOperations.java
+    ```
 
-Compile the Java files with this command:
+### 3. Run the main application:
 
-```bash
-javac -d out/ src/main/java/MatrixOperations.java src/main/java/Main.java
-```
+    ```bash
+    java -cp out lab_1.Main
+    ```
 
-### 3. Run the Project
+### 4. To run the unit tests, make sure you are in the `Java_labs` directory, then execute the following command:
 
-To run the project, use the following command:
-
-```bash
-java -cp out Main
-```
-
-### 4. Run Unit Tests
-
-To run the unit tests, use the following command:
-
-```bash
-javac -d out/ -cp junit-4.12.jar src/test/java/MatrixOperationsTest.java
-java -cp out/:junit-4.12.jar org.junit.runner.JUnitCore MatrixOperationsTest
-```
+    ```bash
+    java -cp out:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore tests.MatrixOperationsTest
+    ```
+    ```bash
+    java -cp out:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore tests.MainTest
+    ```
 
 ## Conclusion
 
-This project demonstrates basic matrix operations and their implementation in Java. The provided tests ensure the correctness of the operations. Feel free to explore and modify the code as needed.
+This project demonstrates the implementation of basic matrix operations and their validation through unit testing. Feel free to explore the code and make modifications as needed.
 
