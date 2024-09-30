@@ -41,5 +41,5 @@ This repository contains Java lab work focused on matrix operations, such as mat
 
 ## Conclusion
 
-This project demonstrates the implementation of basic matrix operations and their validation through unit testing. Feel free to explore the code and make modifications as needed.
+This project demonstrates the implementation of basic matrix operations and their validation through unit testing. 
 
