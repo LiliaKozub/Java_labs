@@ -43,3 +43,45 @@ This repository contains Java lab work focused on matrix operations, such as mat
 
 This project demonstrates the implementation of basic matrix operations and their validation through unit testing. 
 
+## Description (Lab2, variant 9)
+
+This project involves creating a Java class that includes an executable method designed to perform actions on a given text string and an array of words. The main objective is to count how many sentences contain each word from the array
+
+## Requirements
+
+- **Java Development Kit (JDK)** version 8 or higher
+- **JUnit 5** for running the tests
+- **Apache Maven** 3.6.0 or higher
+
+## How to Run the Project
+
+### 1. Clone the repository using the following command:
+
+    
+    git clone https://github.com/LiliaKozub/Java_labs.git
+    
+
+### 2. Navigate to the lab2_java directory
+
+
+     cd Java_labs/lab2_java
+     
+
+### 3. Build the project with Maven
+
+
+     mvn clean install
+
+
+### 4. To run the project, use the following Maven command:
+
+
+     mvn exec:java -Dexec.mainClass="org.example.Main"
+
+
+### 5. To run the tests, use:
+
+
+     mvn test
+
+
