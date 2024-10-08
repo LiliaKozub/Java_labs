@@ -43,6 +43,8 @@ This repository contains Java lab work focused on matrix operations, such as mat
 
 This project demonstrates the implementation of basic matrix operations and their validation through unit testing. 
 
+
+
 ## Description (Lab2, variant 9)
 
 This project involves creating a Java class that includes an executable method designed to perform actions on a given text string and an array of words. The main objective is to count how many sentences contain each word from the array
@@ -85,3 +87,6 @@ This project involves creating a Java class that includes an executable method d
      mvn test
 
 
+## Conclusion
+
+This project demonstrates the ability to manipulate strings and count word occurrences across sentences using Java. 
