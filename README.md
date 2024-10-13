@@ -90,3 +90,54 @@ This project involves creating a Java class that includes an executable method d
 ## Conclusion
 
 This project demonstrates the ability to manipulate strings and count word occurrences across sentences using Java. 
+
+
+## Description (Lab3, variant 9)
+
+This lab implements an NPC character management system for games. The project allows you to create, save and sort NPCs by various criteria such as name, role, level and agility. The user can enter details for each NPC, view a list of created characters, and search for identical NPCs in the list.
+
+## Requirements
+
+- **Java Development Kit (JDK)** version 11 or higher
+- **JUnit 5** for running the tests
+- **Apache Maven** 3.6.0 or higher
+
+## How to Run the Project
+
+### 1. Clone the repository using the following command:
+
+    
+    git clone https://github.com/LiliaKozub/Java_labs.git
+    
+
+### 2. Navigate to the lab3_java directory
+
+
+     cd Java_labs/lab3_java
+     
+
+### 3. Compile and package the project with Maven
+
+
+     mvn clean install
+
+
+### 4. Run the compiled JAR file:
+
+
+     java -jar target/untitled2-1.0-SNAPSHOT.jar
+
+
+### 5. To run the tests, use:
+
+
+     mvn test
+
+
+## Documentation
+
+The project documentation can be viewed at the following link: [Documentation](./org/example/package-summary.html).
+
+## Conclusion
+
+This lab work demonstrates the effective use of object-oriented programming principles in Java to manage game entities, specifically Non-Playable Characters (NPCs).
