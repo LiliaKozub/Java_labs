@@ -25,7 +25,7 @@ public class UserInput {
         StringBuilder[] wordsArray = new StringBuilder[0];
         boolean loop = true;
         while (loop) {
-            System.out.println("Введіть масив слів (через кому):");
+            System.out.println("Enter an array of words (separated by commas):");
             String inputWords = scanner.nextLine();
 
             try {
