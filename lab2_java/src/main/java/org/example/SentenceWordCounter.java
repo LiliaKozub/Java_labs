@@ -60,20 +60,22 @@ public class SentenceWordCounter {
     }
 
     public static boolean containsIgnoreCase(StringBuilder sentence, StringBuilder word) {
-        StringBuilder lowerCaseSentence = toLowerCase(sentence);
-        StringBuilder lowerCaseWord = toLowerCase(word);
+    StringBuilder lowerCaseSentence = toLowerCase(sentence);
+    StringBuilder lowerCaseWord = toLowerCase(word);
+    String lowerCaseWordStr = lowerCaseWord.toString();
 
-        for (int i = 0; i <= lowerCaseSentence.length() - lowerCaseWord.length(); i++) {
-            int j;
-            for (j = 0; j < lowerCaseWord.length(); j++) {
-                if (lowerCaseSentence.charAt(i + j) != lowerCaseWord.charAt(j))
-                    break;
-            }
-            if (j == lowerCaseWord.length())
+    for (int i = 0; i <= lowerCaseSentence.length() - lowerCaseWord.length(); i++) {
+        if (lowerCaseSentence.substring(i, i + lowerCaseWord.length()).equals(lowerCaseWordStr)) {
+            boolean isWordBoundaryStart = (i == 0 || !Character.isLetter(lowerCaseSentence.charAt(i - 1)));
+            boolean isWordBoundaryEnd = (i + lowerCaseWord.length() == lowerCaseSentence.length() || !Character.isLetter(lowerCaseSentence.charAt(i + lowerCaseWord.length())));
+
+            if (isWordBoundaryStart && isWordBoundaryEnd) {
                 return true;
+            }
         }
-        return false;
     }
+    return false;
+}
 
     public static void displayResults(StringBuilder[] words, Map<StringBuilder, Integer> wordCountMap) {
         for (StringBuilder word : words)
