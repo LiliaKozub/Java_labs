@@ -7,7 +7,7 @@ public class Main {
         try {
             menu();
         } catch (Exception e) {
-            System.err.println("Виникла помилка: " + e.getMessage());
+            System.err.println("An error occured: " + e.getMessage());
         }
     }
 
@@ -18,10 +18,10 @@ public class Main {
         boolean loop = true;
 
         while (loop) {
-            System.out.println("Виберіть опцію:");
-            System.out.println("1. Використати готовий приклад");
-            System.out.println("2. Ввести свій текст і масив слів");
-            System.out.println("3. Вихід");
+            System.out.println("Select an option:");
+            System.out.println("1. Use a prepared example");
+            System.out.println("2. Enter your text and word array");
+            System.out.println("3. Exit the program");
 
             String choice = scanner.nextLine();
 
@@ -31,7 +31,7 @@ public class Main {
                     text = new StringBuilder("Java is a popular programming language. Java can be used for web development, mobile apps, and more. Programming in Java is powerful.");
 
                     // Виведення тексту перед виконанням прикладу
-                    System.out.println("Готовий текст:");
+                    System.out.println("Prepared text:");
                     System.out.println(text);
 
                     // Створення масиву StringBuilder для слів
@@ -50,12 +50,12 @@ public class Main {
                     SentenceWordCounter.countWordOccurrencesInSentences(wordsArray, text);
                     break;
                 case "3":
-                    System.out.println("Вихід з програми.");
+                    System.out.println("Exit the program...");
                     scanner.close();
                     loop = false;
                     break;
                 default:
-                    System.out.println("Неправильний вибір. Будь ласка, спробуйте ще раз.");
+                    System.out.println("Wrong input. Please try again.");
                     continue;
             }
         }
