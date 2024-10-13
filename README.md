@@ -119,7 +119,7 @@ This lab implements an NPC character management system for games. The project al
 ### 3. Compile and package the project with Maven
 
 
-     mvn clean install
+     mvn clean package
 
 
 ### 4. Run the compiled JAR file:
