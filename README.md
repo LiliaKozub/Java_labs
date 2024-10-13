@@ -69,16 +69,16 @@ This project involves creating a Java class that includes an executable method d
      cd Java_labs/lab2_java
      
 
-### 3. Build the project with Maven
+### 3. Compile and package the project with Maven
 
 
-     mvn clean install
+     mvn clean package
 
 
-### 4. To run the project, use the following Maven command:
+### 4. Run the compiled JAR file:
 
 
-     mvn exec:java -Dexec.mainClass="org.example.Main"
+     java -jar target/untitled2-1.0-SNAPSHOT.jar
 
 
 ### 5. To run the tests, use:
