@@ -6,7 +6,7 @@ public class UserInput {
     public static StringBuilder getTextInput(Scanner scanner) throws Exception {
         StringBuilder text = null;
         while (true) {
-            System.out.println("Введіть текст:");
+            System.out.println("Enter text:");
 
             String inputText = scanner.nextLine();
 
@@ -46,14 +46,14 @@ public class UserInput {
 
     public static void validateTextInput(String inputText) throws IllegalArgumentException {
         if (inputText.isEmpty())
-            throw new IllegalArgumentException("Помилка: текст не може бути пустим. Спробуйте ще раз");
+            throw new IllegalArgumentException("Error: Text cannot be empty. Try again");
 
         if (inputText.charAt(inputText.length() - 1) != '.')
-            throw new IllegalArgumentException("Помилка: текст повинен закінчуватися крапкою. Спробуйте ще раз");
+            throw new IllegalArgumentException("Error: The text should end with a period. Try again");
     }
 
     public static void validateWordsInput(String inputWords) throws IllegalArgumentException {
         if (inputWords.isEmpty())
-            throw new IllegalArgumentException("Помилка: масив слів не повинен бути пустим. Спробуйте ще раз");
+            throw new IllegalArgumentException("Error: array of words must not be empty. Try again");
     }
 }
