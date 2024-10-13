@@ -136,7 +136,7 @@ This lab implements an NPC character management system for games. The project al
 
 ## Documentation
 
-The project documentation can be viewed at the following link: [Documentation](file:///C:/Users/user/IdeaProjects/JavaDoc/org/example/package-summary.html).
+The project documentation can be viewed at the following link: [Documentation](http://localhost:8000/org/example/package-summary.html).
 
 ## Conclusion
 
