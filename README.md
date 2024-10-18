@@ -7,7 +7,7 @@ This repository contains Java lab work focused on matrix operations, such as mat
 ## Requirements
 
 - **Java Development Kit (JDK)** version 8 or higher
-- **JUnit 4** for running the tests
+- **JUnit 5** for running the tests
 
 ## How to Run the Project
 
@@ -33,10 +33,8 @@ This repository contains Java lab work focused on matrix operations, such as mat
 ### 4. To run the unit tests, make sure you are in the `Java_labs` directory, then execute the following command:
 
     
-    java -cp out:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore tests.MatrixOperationsTest
-    
-    
-    java -cp out:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore tests.MainTest
+    javac -cp "../out/production/untitled/lab_1;C:/path_to_libs/junit-jupiter-api-5.7.0.jar;C:/path_to_libs/hamcrest-core-1.3.jar" tests/*.java -d ../out/test/untitled
+
     
 
 ## Conclusion
