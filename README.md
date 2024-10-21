@@ -31,8 +31,7 @@ This repository contains Java lab work focused on matrix operations, such as mat
     
 
 ### 4. To run the unit tests, make sure you have the `Java_labs` directory, then:
-
-    To run the tests, open the project directory through the IDE. In IntelliJ IDEA, you can simply right-click on the test directory or individual test classes in the tests folder and select Run 'All Tests' or Run 'TestName'.
+To run the tests, open the project directory through the IDE. In IntelliJ IDEA, you can simply right-click on the test directory or individual test classes in the tests folder and select Run 'All Tests' or Run 'TestName'.
 
 ## Conclusion
 
