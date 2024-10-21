@@ -91,6 +91,10 @@ This project demonstrates the ability to manipulate strings and count word occur
 
 
 
+
+
+
+
 ## Description (Lab3, variant 9)
 
 This lab implements an NPC character management system for games. The project allows you to create, save and sort NPCs by various criteria such as name, role, level and agility. The user can enter details for each NPC, view a list of created characters, and search for identical NPCs in the list.
@@ -187,7 +191,7 @@ This project is focused on processing text elements such as sentences, words, pu
 
 ## Documentation
 
-The project documentation can be viewed at the following link: [Documentation]([https://regal-douhua-668122.netlify.app/](https://effervescent-frangipane-8380b4.netlify.app/org/example/package-summary.html)).
+The project documentation can be viewed at the following link: [Documentation](https://effervescent-frangipane-8380b4.netlify.app/).
 
 ## Conclusion
 
