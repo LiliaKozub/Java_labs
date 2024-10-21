@@ -30,12 +30,9 @@ This repository contains Java lab work focused on matrix operations, such as mat
     java -cp out lab_1.Main
     
 
-### 4. To run the unit tests, make sure you are in the `Java_labs` directory, then execute the following command:
+### 4. To run the unit tests, make sure you have the `Java_labs` directory, then:
 
-    
-    javac -cp "../out/production/untitled/lab_1;C:/path_to_libs/junit-jupiter-api-5.7.0.jar;C:/path_to_libs/hamcrest-core-1.3.jar" tests/*.java -d ../out/test/untitled
-
-    
+    To run the tests, open the project directory through the IDE. In IntelliJ IDEA, you can simply right-click on the test directory or individual test classes in the tests folder and select Run 'All Tests' or Run 'TestName'.
 
 ## Conclusion
 
