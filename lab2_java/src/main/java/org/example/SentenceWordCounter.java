@@ -25,6 +25,7 @@ public class SentenceWordCounter {
             if (currentChar == '.' || currentChar == '?' || currentChar == '!') {
                 sentencesList.add(new StringBuilder(text.substring(sentenceStart, i).trim()));
                 sentenceStart = i + 1;
+            }
         }
 
         StringBuilder[] sentences = new StringBuilder[sentencesList.size()];
@@ -62,21 +63,21 @@ public class SentenceWordCounter {
     }
 
     public static boolean containsIgnoreCase(StringBuilder sentence, StringBuilder word) {
-    StringBuilder lowerCaseSentence = toLowerCase(sentence);
-    StringBuilder lowerCaseWord = toLowerCase(word);
-    String lowerCaseWordStr = lowerCaseWord.toString();
-
-    for (int i = 0; i <= lowerCaseSentence.length() - lowerCaseWord.length(); i++) {
-        if (lowerCaseSentence.substring(i, i + lowerCaseWord.length()).equals(lowerCaseWordStr)) {
-            boolean isWordBoundaryStart = (i == 0 || !Character.isLetter(lowerCaseSentence.charAt(i - 1)));
-            boolean isWordBoundaryEnd = (i + lowerCaseWord.length() == lowerCaseSentence.length() || !Character.isLetter(lowerCaseSentence.charAt(i + lowerCaseWord.length())));
-
-            if (isWordBoundaryStart && isWordBoundaryEnd) {
-                return true;
+        StringBuilder lowerCaseSentence = toLowerCase(sentence);
+        StringBuilder lowerCaseWord = toLowerCase(word);
+        String lowerCaseWordStr = lowerCaseWord.toString();
+    
+        for (int i = 0; i <= lowerCaseSentence.length() - lowerCaseWord.length(); i++) {
+            if (lowerCaseSentence.substring(i, i + lowerCaseWord.length()).equals(lowerCaseWordStr)) {
+                boolean isWordBoundaryStart = (i == 0 || !Character.isLetter(lowerCaseSentence.charAt(i - 1)));
+                boolean isWordBoundaryEnd = (i + lowerCaseWord.length() == lowerCaseSentence.length() || !Character.isLetter(lowerCaseSentence.charAt(i + lowerCaseWord.length())));
+    
+                if (isWordBoundaryStart && isWordBoundaryEnd) {
+                    return true;
+                }
             }
         }
-    }
-    return false;
+        return false;
 }
 
     public static void displayResults(StringBuilder[] words, Map<StringBuilder, Integer> wordCountMap) {
