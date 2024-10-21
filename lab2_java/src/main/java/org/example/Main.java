@@ -27,14 +27,8 @@ public class Main {
 
             switch (choice) {
                 case "1":
-                    // Введені дані (готовий приклад)
                     text = new StringBuilder("Java is a popular programming language. Java can be used for web development, mobile apps, and more. Programming in Java is powerful.");
 
-                    // Виведення тексту перед виконанням прикладу
-                    System.out.println("Prepared text:");
-                    System.out.println(text);
-
-                    // Створення масиву StringBuilder для слів
                     wordsArray = new StringBuilder[]{
                             new StringBuilder("Java"),
                             new StringBuilder("programming"),
@@ -42,6 +36,7 @@ public class Main {
                             new StringBuilder("mobile")
                     };
 
+                    UserInput.processTextAndWords(text, wordsArray);
                     SentenceWordCounter.countWordOccurrencesInSentences(wordsArray, text);
                     break;
                 case "2":
