@@ -90,6 +90,7 @@ This project involves creating a Java class that includes an executable method d
 This project demonstrates the ability to manipulate strings and count word occurrences across sentences using Java. 
 
 
+
 ## Description (Lab3, variant 9)
 
 This lab implements an NPC character management system for games. The project allows you to create, save and sort NPCs by various criteria such as name, role, level and agility. The user can enter details for each NPC, view a list of created characters, and search for identical NPCs in the list.
@@ -139,3 +140,56 @@ The project documentation can be viewed at the following link: [Documentation](h
 ## Conclusion
 
 This lab work demonstrates the effective use of object-oriented programming principles in Java to manage game entities, specifically Non-Playable Characters (NPCs).
+
+
+
+## Description (Lab4)
+
+This project is focused on processing text elements such as sentences, words, punctuation, and letters. The main functionality includes counting the number of occurrences of specific words in a set of sentences. The project also includes a set of unit tests to verify the correctness of the implementation. 
+
+## Requirements
+
+- **Java Development Kit (JDK)** version 11 or higher
+- **JUnit 5** for running the tests
+- **Apache Maven** 3.6.0 or higher
+
+## How to Run the Project
+
+### 1. Clone the repository using the following command:
+
+    
+    git clone https://github.com/LiliaKozub/Java_labs.git
+    
+
+### 2. Navigate to the project directory
+
+
+     cd Java_labs/lab4_java
+     
+
+### 3. Build the project
+
+
+     mvn clean package
+
+
+### 4. Run the project:
+
+
+     java -jar target\lab4_java-1.0-SNAPSHOT.jar
+
+
+### 5. To run the tests, use:
+
+
+     mvn test
+
+
+## Documentation
+
+The project documentation can be viewed at the following link: [Documentation]([https://regal-douhua-668122.netlify.app/](https://effervescent-frangipane-8380b4.netlify.app/org/example/package-summary.html)).
+
+## Conclusion
+
+This lab demonstrates how to implement a program that processes text elements using object-oriented principles in Java. 
+
