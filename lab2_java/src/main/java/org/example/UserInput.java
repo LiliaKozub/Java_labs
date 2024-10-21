@@ -34,7 +34,7 @@ public class UserInput {
 
                 wordsArray = new StringBuilder[words.length];
                 for (int i = 0; i < words.length; i++) {
-                    wordsArray[i] = new StringBuilder(words[i]);
+                    wordsArray[i] = new StringBuilder(words[i].trim());
                 }
                 loop = false;
             } catch (IllegalArgumentException e) {
@@ -44,9 +44,9 @@ public class UserInput {
         return wordsArray;
     }
 
-    public static void processTextAndWords(String preparedText, String[] wordsArray) {
+    public static void processTextAndWords(StringBuilder preparedText, StringBuilder[] wordsArray) {
         try {
-            validateTextInput(preparedText);
+            validateTextInput(preparedText.toString());
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
             return; 
@@ -57,9 +57,9 @@ public class UserInput {
 
         
 
-        for (String word : wordsArray) {
+        for (StringBuilder word : wordsArray) {
             try {
-                validateWordsInput(word);
+                validateWordsInput(word.toString());
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
                 return;
@@ -70,6 +70,8 @@ public class UserInput {
     public static void validateTextInput(String inputText) throws IllegalArgumentException {
         if (inputText == null || inputText.trim().isEmpty())
             throw new IllegalArgumentException("Error: Text cannot be empty. Try again");
+
+        char lastChar = inputText.charAt(inputText.length() - 1);
 
         if (lastChar != '.' && lastChar != '!' && lastChar != '?')
             throw new IllegalArgumentException("Error: The text should end with a valid punctuation mark ('.', '!', '?'). Try again");
