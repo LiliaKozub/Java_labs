@@ -41,7 +41,7 @@ This repository contains Java lab work focused on matrix operations, such as mat
 
 This project demonstrates the implementation of basic matrix operations and their validation through unit testing. 
 
-
+<br>
 
 ## Description (Lab2, variant 9)
 
@@ -141,7 +141,7 @@ The project documentation can be viewed at the following link: [Documentation](h
 
 This lab work demonstrates the effective use of object-oriented programming principles in Java to manage game entities, specifically Non-Playable Characters (NPCs).
 
-
+<br>
 
 ## Description (Lab4)
 
