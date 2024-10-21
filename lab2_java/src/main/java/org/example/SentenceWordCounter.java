@@ -33,6 +33,8 @@ public class SentenceWordCounter {
 
     public static Map<StringBuilder, Integer> initializeWordCountMap(StringBuilder[] words) {
         Map<StringBuilder, Integer> wordCountMap = new HashMap<>();
+
+        word = word.trim();
         for (StringBuilder word : words)
             wordCountMap.put(word, 0);
 
