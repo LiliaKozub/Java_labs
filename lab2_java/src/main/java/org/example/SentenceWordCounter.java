@@ -21,10 +21,10 @@ public class SentenceWordCounter {
 
         int sentenceStart = 0;
         for (int i = 0; i < text.length(); i++) {
-            if (text.charAt(i) == '.') {
+            char currentChar = text.charAt(i);
+            if (currentChar == '.' || currentChar == '?' || currentChar == '!') {
                 sentencesList.add(new StringBuilder(text.substring(sentenceStart, i).trim()));
                 sentenceStart = i + 1;
-            }
         }
 
         StringBuilder[] sentences = new StringBuilder[sentencesList.size()];
