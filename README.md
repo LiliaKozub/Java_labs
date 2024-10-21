@@ -89,11 +89,7 @@ This project involves creating a Java class that includes an executable method d
 
 This project demonstrates the ability to manipulate strings and count word occurrences across sentences using Java. 
 
-
-
-
-
-
+<br>
 
 ## Description (Lab3, variant 9)
 
