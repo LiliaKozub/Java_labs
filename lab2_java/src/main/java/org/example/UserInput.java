@@ -44,16 +44,39 @@ public class UserInput {
         return wordsArray;
     }
 
+    public static void processTextAndWords(String preparedText, String[] wordsArray) {
+        try {
+            validateTextInput(preparedText);
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+            return; 
+        }
+
+        System.out.println("Prepared text:");
+        System.out.println(preparedText);
+
+        
+
+        for (String word : wordsArray) {
+            try {
+                validateWordsInput(word);
+            } catch (IllegalArgumentException e) {
+                System.out.println(e.getMessage());
+                return;
+            }
+        }
+    }
+
     public static void validateTextInput(String inputText) throws IllegalArgumentException {
-        if (inputText.isEmpty())
+        if (inputText == null || inputText.trim().isEmpty())
             throw new IllegalArgumentException("Error: Text cannot be empty. Try again");
 
-        if (inputText.charAt(inputText.length() - 1) != '.')
-            throw new IllegalArgumentException("Error: The text should end with a period. Try again");
+        if (lastChar != '.' && lastChar != '!' && lastChar != '?')
+            throw new IllegalArgumentException("Error: The text should end with a valid punctuation mark ('.', '!', '?'). Try again");
     }
 
     public static void validateWordsInput(String inputWords) throws IllegalArgumentException {
-        if (inputWords.isEmpty())
+        if (inputWords == null || inputWords.trim().isEmpty())
             throw new IllegalArgumentException("Error: array of words must not be empty. Try again");
     }
 }
