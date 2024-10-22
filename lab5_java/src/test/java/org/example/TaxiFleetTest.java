@@ -102,7 +102,7 @@ class TaxiFleetTest {
         Exception exception = assertThrows(CarValidationException.class, () -> {
             taxiFleet.findCarsBySpeedRange(-50, 100);
         });
-        assertEquals("An erroneous attempt to find a car with a speed in range [-50.0; 100.0].Speed values must be non-negative.", exception.getMessage());
+        assertEquals("An erroneous attempt to find a car with a speed in range [-50.0; 100.0]. Speed values must be non-negative.", exception.getMessage());
     }
 
     /**
@@ -121,6 +121,6 @@ class TaxiFleetTest {
         Exception exception = assertThrows(CarValidationException.class, () -> {
             taxiFleet.findCarsBySpeedRange(300, 100);
         });
-        assertEquals("An erroneous attempt to find a car with a speed in range [300.0; 100.0].Lower bound must be less than or equal to upper bound .", exception.getMessage());
+        assertEquals("An erroneous attempt to find a car with a speed in range [300.0; 100.0]. Lower bound must be less than or equal to upper bound.", exception.getMessage());
     }
 }
