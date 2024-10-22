@@ -189,3 +189,54 @@ The project documentation can be viewed at the following link: [Documentation](h
 
 This lab demonstrates how to implement a program that processes text elements using object-oriented principles in Java. 
 
+<br>
+
+## Description (Lab5, variant 9)
+
+The lab work involved creating a passenger car management system by implementing an inheritance hierarchy for passenger cars.The program shows the taxi fleet class, which is an array of passenger cars, and the class performs such actions as calculating the cost of the fleet, sorting the fleet cars by fuel consumption, searching for a car that corresponds to a given speed range. 
+
+## Requirements
+
+- **Java Development Kit (JDK)** version 11 or higher
+- **JUnit 5** for running the tests
+- **Apache Maven** 3.6.0 or higher
+
+## How to Run the Project
+
+### 1. Clone the repository using the following command:
+
+    
+    git clone https://github.com/LiliaKozub/Java_labs.git
+    
+
+### 2. Navigate to the project directory
+
+
+     cd Java_labs/lab5_java
+     
+
+### 3. Build the project
+
+
+     mvn clean package
+
+
+### 4. Run the project:
+
+
+     java -jar target\lab5_java-1.0-SNAPSHOT.jar
+
+
+### 5. To run the tests, use:
+
+
+     mvn test
+
+
+## Documentation
+
+The project documentation can be viewed at the following link: [Documentation](https://singular-heliotrope-f5ae69.netlify.app/).
+
+## Conclusion
+
+In conclusion, the lab work successfully implemented a passenger car management system through an inheritance hierarchy.
