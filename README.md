@@ -240,3 +240,61 @@ The project documentation can be viewed at the following link: [Documentation](h
 ## Conclusion
 
 In conclusion, the lab work successfully implemented a passenger car management system through an inheritance hierarchy.
+
+<br>
+
+## Description (Lab6, variant 9)
+
+This laboratory work is aimed at the development and testing of a data structure for storing cars in the form of a set (Set), which allows you to perform operations of adding, deleting, checking the presence of elements, checking the size of the set, etc., and also supports the uniqueness of elements. The work includes creating a CarSet class that implements a set of cars, as well as testing its functionality using JUnit tests.
+
+## Requirements
+
+- **Java Development Kit (JDK)** version 11 or higher
+- **JUnit 5** for running the tests
+- **Apache Maven** 3.6.0 or higher
+
+## How to Run the Project
+
+To quickly test the basic operation of the CarSet class, you can run the main method in the Main class, which contains the implementation and demonstration of the operation of the car set. This will allow you to test basic functions such as adding cars to a set, removing them, checking for items, set size, etc.
+
+### 1. Clone the repository using the following command:
+
+    
+    git clone https://github.com/LiliaKozub/Java_labs.git
+    
+
+### 2. Navigate to the project directory
+
+
+     cd Java_labs/lab6_java
+     
+
+### 3. Build the project
+
+
+     mvn clean package
+
+
+### 4. Run the project:
+
+
+     java -jar target\lab6_java-1.0-SNAPSHOT.jar
+
+## How to Run the tests
+
+For more in-depth verification of the operation of each method in the CarSet class, you can use tests that check all possible operations with a set of cars. The tests are written using JUnit 5 and cover all the functionality of the CarSet class
+
+### 5. To run the tests, use:
+
+
+     mvn test
+
+
+## Documentation
+
+The project documentation can be viewed at the following link: [Documentation](https://glistening-dodol-e0a3d0.netlify.app/).
+
+## Conclusion
+
+As a result of the laboratory work, the CarSet class was developed, which implements a set of cars with the ability to perform standard operations, such as adding, removing, checking the presence of elements, as well as maintaining the uniqueness of data. Due to the use of arrays for storing elements, an automatic change in the size of the array was implemented when adding new elements. In addition, the functionality of the class was tested using JUnit, which allowed to check the correct implementation of the methods.
+
